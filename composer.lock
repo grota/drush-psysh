@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "c0d24497071b297d3adf76c90b1436f5",
+    "hash": "63d31001904d9db40e621b5a64a18018",
     "packages": [
         {
             "name": "nikic/php-parser",
@@ -55,12 +55,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "46dd9a050405ecc2a3d1203d57bcff0f00675ff5"
+                "reference": "3ddffb168b07bdf67704a34e67e6b3f5299cb923"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/46dd9a050405ecc2a3d1203d57bcff0f00675ff5",
-                "reference": "46dd9a050405ecc2a3d1203d57bcff0f00675ff5",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/3ddffb168b07bdf67704a34e67e6b3f5299cb923",
+                "reference": "3ddffb168b07bdf67704a34e67e6b3f5299cb923",
                 "shasum": ""
             },
             "require": {
@@ -108,7 +108,7 @@
                 "interactive",
                 "shell"
             ],
-            "time": "2014-01-24 02:39:47"
+            "time": "2014-01-30 14:56:05"
         },
         {
             "name": "symfony/console",
