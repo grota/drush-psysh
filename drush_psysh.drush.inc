@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Implements hook_drush_help
  */
@@ -19,9 +20,9 @@ function drush_psysh_drush_command() {
   $items['drush-psysh'] = array(
     'callback' => 'drush_psysh_callback',
     'description' => 'Drupal REPL via psysh',
-    'aliases' => array('psysh', 'repl'),
+    'aliases' => array('shell', 'repl', 'psysh'),
     'examples' => array(
-      'drush psysh' => 'Invokes the Drupal REPL',
+      'drush shell' => 'Invokes the Drupal REPL',
     ),
   );
   return $items;
