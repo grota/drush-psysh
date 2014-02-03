@@ -10,5 +10,10 @@
             "name": "Giuseppe Rota",
             "email": "rota.giuseppe@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "DrushPsysh\\": "src/"
+        }
+    }
 }
