@@ -19,6 +19,7 @@ Integration of [psysh][1] into Drush so that you can have a Drupal REPL.
 mkdir ~/.drush
 cd $_
 git clone https://github.com/grota/drush-psysh.git
+cd drush-psysh
 composer install
 drush cc drush
 ```
