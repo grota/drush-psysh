@@ -21,6 +21,11 @@ function drush_psysh_drush_help($section) {
  * Implements hook_drush_command().
  */
 function drush_psysh_drush_command() {
+  $items['drush-psysh-install-deps'] = array(
+    'callback'    => 'drush_psysh_install_deps',
+    'description' => 'Install drush-psysh dependencies via composer',
+    'bootstrap'   => DRUSH_BOOTSTRAP_DRUSH,
+  );
   $items['drush-psysh'] = array(
     'callback'    => 'drush_psysh_callback',
     'description' => 'Drupal REPL via psysh',
@@ -57,4 +62,20 @@ function drush_psysh_callback() {
   $shell = new Psy\Shell();
   $shell->addCommands($commands);
   $shell->run();
+}
+
+/**
+ * Drush-psysh dependency installation callback.
+ */
+function drush_psysh_install_deps() {
+  $autoload = __DIR__ . '/vendor/autoload.php';
+  if (is_file($autoload) && is_readable($autoload)) {
+    return drush_log(dt('Dependencies already installed'), 'success');
+  }
+  $cmd = 'composer install';
+  $rc = drush_shell_cd_and_exec(__DIR__, $cmd);
+  if (!$rc) {
+    return drush_set_error(dt('Error executing "!cmd" in "!dir"', ['!cmd' => $cmd, '!dir' => __DIR__]));
+  }
+  drush_log(dt('Dependencies installed'), 'success');
 }
