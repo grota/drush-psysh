@@ -75,9 +75,6 @@ class DrushCommand extends BaseCommand {
    * {@inheritdoc}
    */
   protected function execute(InputInterface $input, OutputInterface $output) {
-    // $output->page(json_encode($this->config, JSON_PRETTY_PRINT));
-    // return;
-
     global $argv;
 
     $drush_args = $argv;
