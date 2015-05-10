@@ -109,4 +109,5 @@ class DrushHelpCommand extends BaseCommand {
       $output->page($messages);
     }
   }
+
 }

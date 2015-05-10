@@ -31,7 +31,7 @@ class DrushCommand extends BaseCommand {
    * decent job of building a PsySH command proxy for it. Wheee!
    *
    * @param array $config
-   *   drush command configuration array.
+   *   Drush command configuration array.
    */
   public function __construct(array $config) {
     $this->config = $config;
