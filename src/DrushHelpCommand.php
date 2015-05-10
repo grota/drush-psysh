@@ -2,6 +2,8 @@
 /**
  * @file
  * Help command.
+ *
+ * @author Justin Hileman
  */
 
 namespace DrushPsysh;
@@ -16,8 +18,6 @@ use Symfony\Component\Console\Output\OutputInterface;
  * Help command.
  *
  * Lists available commands, and gives command-specific help when asked nicely.
- *
- * @author Justin Hileman
  */
 class DrushHelpCommand extends BaseCommand {
   const NON_DRUSH_CATEGORY = 'PsySH commands';

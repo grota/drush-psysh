@@ -3,6 +3,8 @@
  * @file
  * Main DrushCommand class.
  *
+ * @author Justin Hileman
+ *
  * DrushCommand is a PsySH proxy command which accepts a drush command config
  * array and tries to build an appropriate PsySH command for it.
  */
@@ -17,8 +19,6 @@ use Symfony\Component\Console\Input\InputOption;
 
 /**
  * Main DrushCommand class.
- *
- * @author Justin Hileman
  */
 class DrushCommand extends BaseCommand {
   private $config;
