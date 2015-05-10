@@ -1,4 +1,3 @@
-
 drush-psysh
 ===========
 
@@ -36,5 +35,4 @@ drush psysh
 ```
 
 And here's an example showing the repl in action calling a Drupal function:
-![in Action](https://github.com/grota/drush-psysh/raw/master/drush-psysh.png "logo title")
-
+![in Action](https://github.com/grota/drush-psysh/raw/7.x-1.x/drush-psysh.png)
