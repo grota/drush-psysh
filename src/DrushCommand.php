@@ -1,6 +1,8 @@
 <?php
 /**
  * @file
+ * Main DrushCommand class.
+ *
  * DrushCommand is a PsySH proxy command which accepts a drush command config
  * array and tries to build an appropriate PsySH command for it.
  */
@@ -14,7 +16,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
 /**
- * Main DrushCommand class
+ * Main DrushCommand class.
  *
  * @author Justin Hileman
  */
@@ -29,7 +31,7 @@ class DrushCommand extends BaseCommand {
    * decent job of building a PsySH command proxy for it. Wheee!
    *
    * @param array $config
-   *   drush command configuration array
+   *   drush command configuration array.
    */
   public function __construct(array $config) {
     $this->config = $config;
@@ -220,4 +222,5 @@ class DrushCommand extends BaseCommand {
   private function escapeArg($arg) {
     return preg_match('{^[\w-]+$}', $arg) ? $arg : escapeshellarg($arg);
   }
+
 }
