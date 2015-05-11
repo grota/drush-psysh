@@ -3,7 +3,7 @@
  * @file
  * Help command.
  *
- * @author Justin Hileman
+ * Original author: Justin Hileman
  */
 
 namespace DrushPsysh;

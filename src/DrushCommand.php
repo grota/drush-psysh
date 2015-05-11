@@ -3,7 +3,7 @@
  * @file
  * Main DrushCommand class.
  *
- * @author Justin Hileman
+ * Original author: Justin Hileman
  *
  * DrushCommand is a PsySH proxy command which accepts a drush command config
  * array and tries to build an appropriate PsySH command for it.
