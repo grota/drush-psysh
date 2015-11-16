@@ -75,7 +75,7 @@ function drush_psysh_install_deps() {
   $cmd = 'composer install';
   $rc = drush_shell_cd_and_exec(__DIR__, $cmd);
   if (!$rc) {
-    return drush_set_error(dt('Error executing "!cmd" in "!dir"', ['!cmd' => $cmd, '!dir' => __DIR__]));
+    return drush_set_error(dt('Error executing "!cmd" in "!dir"', array('!cmd' => $cmd, '!dir' => __DIR__)));
   }
   drush_log(dt('Dependencies installed'), 'success');
 }
