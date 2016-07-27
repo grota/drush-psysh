@@ -2,7 +2,7 @@
     "name": "grota/drush-psysh",
     "description": "Integration of psysh into Drush so that you can have a Drupal REPL",
     "require": {
-        "psy/psysh": "0.4.4"
+        "psy/psysh": "0.7.2"
     },
     "license": "MIT",
     "authors": [
